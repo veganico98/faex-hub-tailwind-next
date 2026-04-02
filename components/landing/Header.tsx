@@ -63,7 +63,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:flex items-center">
-          <Button className="bg-black text-white hover:bg-indigo-500 rounded-full px-5 py-2 text-sm">
+          <Button className="bg-black text-white hover:bg-indigo-500 duration-500 rounded-full px-5 py-2 text-sm">
             Acessar plataforma
           </Button>
         </div>

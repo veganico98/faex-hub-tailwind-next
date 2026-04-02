@@ -34,14 +34,19 @@ export default function HeroBanner() {
             <Button className="bg-black text-white rounded-lg px-6 py-3 hover:scale-105 hover:bg-indigo-500 transition">
               Acessar agora →
             </Button>
-            <Button className="border border-gray-300 rounded-lg px-6 py-3 hover:bg-gray-100 transition dark:bg-stone-500 dark:hover:bg-stone-600">
+            <Button className="border border-gray-300 dark:!border-stone-500 rounded-lg px-6 py-3 hover:bg-blue-500 dark:hover:bg-gray-100 transition dark:bg-stone-500 dark:hover:bg-stone-600">
               Saiba mais
             </Button>
           </div>
         </div>
 
-        <div className="hidden lg:flex flex-col gap-4 absolute left-10 top-1/2 -translate-y-1/2">
-          <Card icon={<Users size={18} />} value="500+" label="Alunos" />
+        <div className="hidden lg:flex flex-col gap-4 absolute left-25 xl:left-10 top-1/2 -translate-y-1/2 animate-bounce [animation-duration:3s]">
+          <Card 
+            icon={<Users size={18} />} 
+            value="500+" 
+            label="Alunos" />
+        </div>
+        <div className="hidden lg:flex flex-col gap-4 absolute left-5 xl:-left-15 top-4/5 -translate-y-1/2 animate-bounce [animation-duration:3s]">
           <Card
             icon={<BookOpen size={18} />}
             value="1.200+"
@@ -49,13 +54,18 @@ export default function HeroBanner() {
           />
         </div>
 
-        <div className="hidden lg:flex flex-col gap-4 absolute right-10 top-1/2 -translate-y-1/2">
+        <div className="hidden lg:flex flex-col gap-4 absolute right-25 xl:right-10 top-1/2 -translate-y-1/2 animate-bounce [animation-duration:3s]">
           <Card
             icon={<MessageCircle size={18} />}
             value="10.000+"
             label="Interações"
           />
-          <Card icon={<Star size={18} />} value="100%" label="Gratuito" />
+        </div>
+        <div className="hidden lg:flex flex-col gap-4 absolute right-5 xl:-right-15 top-4/5 -translate-y-1/2 animate-bounce [animation-duration:3s]">
+          <Card 
+            icon={<Star size={18} />} 
+            value="100%" 
+            label="Gratuito" />
         </div>
       </div>
 
